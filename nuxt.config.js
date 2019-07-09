@@ -13,7 +13,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: '//at.alicdn.com/t/font_1168872_ehvuah8v57g.css' }
+      { rel: 'stylesheet', type: 'text/css', href: '//at.alicdn.com/t/font_1168872_ehvuah8v57g.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '//at.alicdn.com/t/font_1277317_azu275jnqjh.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '//unpkg.com/element-ui@2.10.1/lib/theme-chalk/index.css' }
     ]
   },
   /*

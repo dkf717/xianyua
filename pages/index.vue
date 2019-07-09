@@ -105,7 +105,6 @@ export default {
     },
 
     mounted(){
-
       // Vue.prototype.$axios = axios
       // nuxt或默认把axios绑定到组件的原型，每个组件实例通过this.$axios来调用
       this.$axios({
