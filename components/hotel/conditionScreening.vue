@@ -29,6 +29,7 @@
 
 <script>
 import PeopleNumber from "@/components/hotel/peopleNumber.vue";
+
 export default {
   components: {
     PeopleNumber
@@ -38,7 +39,7 @@ export default {
       searchForm: {
         cityName: "南京",
         liveTime: [],
-        person:0
+        person: 0
       }
     };
   },
@@ -59,22 +60,22 @@ export default {
     },
     // 选中目的地选项触发
     handleCitySelect(v) {
-      console.log(v);
-      console.log(this.searchForm.cityName);
+      //   console.log(v);
+      //   console.log(this.searchForm.cityName);
     },
     // 选择入住时间触发
     onDateChange(v) {
-      console.log(v);
-      console.log(this.searchForm.liveTime);
+      //   console.log(v);
+      //   console.log(this.searchForm.liveTime);
     },
     //获取人数
-    getperson(num){
-        this.searchForm.person=num
+    getperson(num) {
+      this.searchForm.person = num;
     },
     // 查看价格
-    onSubmit(){
-        console.log(this.searchForm);
-        
+    onSubmit() {
+      // console.log(this.searchForm);
+      this.$emit("getsearchForm", { ...this.searchForm });
     }
   }
 };
